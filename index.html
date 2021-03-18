@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 3D Webviewer v3</title>
+    <title>Unity WebGL Player | 3D Webviewer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,19 +22,19 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">3D Webviewer v3</div>
+        <div id="unity-build-title">3D Webviewer</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/3D-Webviewer-build.loader.js";
+      var loaderUrl = buildUrl + "/2021_03_17-005.loader.js";
       var config = {
-        dataUrl: buildUrl + "/3D-Webviewer-build.data",
-        frameworkUrl: buildUrl + "/3D-Webviewer-build.framework.js",
-        codeUrl: buildUrl + "/3D-Webviewer-build.wasm",
+        dataUrl: buildUrl + "/2021_03_17-005.data",
+        frameworkUrl: buildUrl + "/2021_03_17-005.framework.js",
+        codeUrl: buildUrl + "/2021_03_17-005.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Florence4D",
-        productName: "3D Webviewer v3",
+        productName: "3D Webviewer",
         productVersion: "0.1",
       };
 
@@ -56,7 +56,7 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-      canvas.style.background = "url('" + buildUrl + "/3D-Webviewer-build.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/2021_03_17-005.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
