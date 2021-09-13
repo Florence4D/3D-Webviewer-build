@@ -1,0 +1,3 @@
+[submodule "lib/outdated-browser-rework"]
+	path = lib/outdated-browser-rework
+	url = https://github.com/mikemaccana/outdated-browser-rework.git

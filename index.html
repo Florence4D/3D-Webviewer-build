@@ -6,7 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>3D Webviewer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link ref="stylesheet" href="lib/outdated-browser-rework/dist/style.css">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="lib/outdated-browser-rework/dist/outdated-browser-rework.min.js"></script>
+    <script>
+      outdatedBrowserRework({
+        browserSupport: {
+          'Chrome': 55,
+          'Safari': false,
+          'Firefox': false,
+          'Opera': false,
+          'Edge': 39,
+          'IE': false,
+        },
+        messages: {
+          en: {
+            outOfDate: 'Your browser is out of date, please update your browser by going to www.google.com/chrome/browser/desktop/',
+            unsupported: 'Your browser is not supported. Please try IE Edge or Chrome to view 3D content.',
+          }
+        },
+      });
+      </script>
   </head>
   <body class="dark">
     <div id="unity-container" class="unity-desktop">
@@ -88,6 +108,7 @@
         });
       };
       document.body.appendChild(script);
-    </script>
+    </script> 
+    <div id="outdated"></div>
   </body>
 </html>
